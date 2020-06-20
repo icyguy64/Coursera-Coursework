@@ -55,7 +55,7 @@ if __name__ == '__main__':
     st.subheader('User Input Parameters')
     st.write(df)
 
-    filename = 'XGBoost_OS'
+    filename = 'SVC_US'
     model = pickle.load(open(filename,'rb'))
     pred = model.predict(df)
     st.subheader('Prediction - 1 denotes frauduluent transaction, 0 denotes non-fraudulent transaction')
